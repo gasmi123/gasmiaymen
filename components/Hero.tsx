@@ -1,5 +1,7 @@
 
 import React, { forwardRef } from 'react';
+// @ts-ignore: image import without type declaration
+import image from './images/gasmiaymen.jpg';
 
 const Hero = forwardRef<HTMLElement>((props, ref) => {
   return (
@@ -8,7 +10,7 @@ const Hero = forwardRef<HTMLElement>((props, ref) => {
         <div className="flex flex-col md:flex-row items-center gap-12 animate-fade-in-up">
           <div className="md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-text mb-4">
-              Jane Doe
+              Gasmi Aymen 
             </h1>
             <p className="text-2xl md:text-3xl text-brand-secondary mb-6 font-medium">
               Full-Stack Developer
@@ -28,7 +30,7 @@ const Hero = forwardRef<HTMLElement>((props, ref) => {
           <div className="md:w-1/2 flex justify-center">
             <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-brand-secondary">
               <img
-                src="https://picsum.photos/seed/portfolio-avatar/400/400"
+                src={image}
                 alt="Professional portrait of Jane Doe"
                 className="w-full h-full object-cover"
               />

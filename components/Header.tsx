@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <a href="#home" className="text-xl font-bold text-dark-text hover:text-brand-secondary transition-colors duration-300">
-              Your Name
+              Gasmi Aymen
             </a>
           </div>
           <nav className="hidden md:block">
